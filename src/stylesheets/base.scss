@@ -97,8 +97,6 @@ dt {
 		display: inline-block;
 		width: 16px;
 		height: 16px;
-		background: transparent url("assets/icon_edit_user_hover.svg") 0px 0px no-repeat;
-		background-size: 16px 16px;
 	}
 	span{
 		position: relative;
@@ -200,7 +198,6 @@ a:hover{
 
 .icon-close {
 	display: inline-block;
-	background: transparent url(assets/close_red.svg) center center no-repeat;
 	width: 8px;
 	height: 8px;
 	background-size: 8px 8px;
@@ -213,7 +210,6 @@ a:hover{
 
 .icon-add {
 	display: inline-block;
-	background: transparent url(assets/add_blue.svg) center center no-repeat;
 	width: 8px;
 	height: 8px;
 	background-size: 8px 8px;
@@ -430,7 +426,7 @@ input[type="radio"]:focus + label::before  {
 		text-align: left;
 		color: #000000;
 	}
-	
+
 }
 
 .container-loading {
@@ -460,7 +456,6 @@ input[type="radio"]:focus + label::before  {
 		width: 40px;
 		height: 40px;
 		margin: 15px auto 30px auto;
-		background: transparent url("assets/icon_sad.svg") center center no-repeat;
 		background-size: 40px;
 	}
 }
