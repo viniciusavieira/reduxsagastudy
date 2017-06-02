@@ -24,7 +24,7 @@ const config = {
   cache:true,
   entry: {
     app: path.join(srcPath, 'index.jsx'),
-    common: ['react', 'react-router', 'react-dom']
+    common: ['react', 'react-router', 'react-dom', 'babel-polyfill']
   },
   module: {
     rules: [

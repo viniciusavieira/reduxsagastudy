@@ -7,13 +7,10 @@ class Home extends React.Component {
 	constructor(props)
 	{
 		super(props);
-		this.state = {historyData: []};
 	}
 
-
-  	render() {
-
-	    return (
+  render() {
+		return (
 			<div className="dashboard">
 				<h1>Histórico</h1>
 			</div>

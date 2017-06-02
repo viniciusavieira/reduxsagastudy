@@ -1,6 +1,5 @@
 import React from 'react';
 import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router';
-import ModalContainer from 'javascripts/ModalContainer';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'stylesheets/base.scss';
 
@@ -12,27 +11,6 @@ class App extends React.Component {
 	constructor(){
 		super();
 		App.BASEPATH = "reduxsagaredditfeed/";
-
-	}
-
-	componentDidMount()
-	{
-		App.ModalContainer =  this.refs.modalContainer;
-	}
-
-	static onRouteChange()
-	{
-		App.hideModal();
-	}
-
-	static showModal()
-	{
-		App.ModalContainer.show();
-	}
-
-	static hideModal()
-	{
-		App.ModalContainer.hide();
 	}
 
 	static changeRoute(routeString, replace)
@@ -49,10 +27,7 @@ class App extends React.Component {
 	{
 		return (
 			<div>
-				<div className="children">
-						{this.props.children}
-				</div>
-				<ModalContainer ref="modalContainer"/>
+					{this.props.children}
 			</div>
 		);
 	}
